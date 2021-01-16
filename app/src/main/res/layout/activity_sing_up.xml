@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="@drawable/background"
+    android:layout_height="match_parent"
+    tools:context=".SingUpActivity">
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@mipmap/ic_launcher_round"
+        android:layout_marginBottom="20dp"/>
+
+    <EditText
+        android:id="@+id/firstNameEditTextId"
+        android:layout_marginBottom="10dp"
+        android:drawableLeft="@drawable/username"
+        android:hint="First Name"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"/>
+    <EditText
+        android:id="@+id/lastNameEditTextId"
+        android:layout_marginBottom="10dp"
+        android:drawableLeft="@drawable/lastname"
+        android:hint="Last Name"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content" />
+
+    <EditText
+        android:id="@+id/singUpEmailEditTextId"
+        android:layout_marginBottom="10dp"
+        android:drawableLeft="@drawable/email"
+        android:hint="Enter email"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"/>
+    <EditText
+        android:id="@+id/singUpPassEditTextId"
+        android:layout_marginBottom="10dp"
+        android:drawableLeft="@drawable/password"
+        android:hint="Enter password"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:layout_marginTop="10dp"
+        android:id="@+id/singUpButtonId"
+        android:text="SingUp"
+        android:textColor="#FFFFFFFF"
+        android:textAllCaps="false"
+        android:textSize="30sp"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:background="@drawable/buttonshape"
+
+        />
+    <LinearLayout
+        android:gravity="center"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/textviewid"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Done register? "
+            android:textStyle="bold"
+            android:textSize="20sp" />
+        <TextView
+            android:id="@+id/singInTextViewId"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:text="@string/singin"
+            android:textStyle="bold"
+            android:textColor="#2196F3"
+            android:textSize="20sp" />
+
+    </LinearLayout>
+    <ProgressBar
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/progressBarId"
+        android:visibility="gone"/>
+
+</LinearLayout>

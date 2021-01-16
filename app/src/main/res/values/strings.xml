@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">SingInSingUp</string>
+    <string name="singup">SingUp Page</string>
+    <string name="singin">LogIn Page</string>
+</resources>
